@@ -1,0 +1,14 @@
+/ExtentReports
+ExtentReports
+target
+test-output
+.classpath
+.idea/
+.metadata/
+.project      
+.settings/
+Comcate.iml
+configData.properties
+PropertiesUtils
+/bin
+/exportfiles

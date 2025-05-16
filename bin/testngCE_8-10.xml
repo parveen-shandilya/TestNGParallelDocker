@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite2">
+	<listeners>
+		<listener class-name="Listeners.Listener" />
+	</listeners>
+	<test name="CE2" parallel="classes" thread-count="3">
+		<classes>
+			<class name="TestCases.CaseAssignment" />
+			<class name="TestCases.UserManagement" />
+			<class name="TestCases.OnlinePayment" />
+			<class name="TestCases.CLP" />
+			<class name="TestCases.GenerateNoticeOutOfInspection" />
+			<class name="TestCases.FlatFineWithNotice" />
+			<class name="TestCases.ExistingNotice" />
+			<class name="TestCases.EscalatedNoticesCDP" />
+			<class name="TestCases.FlatFineWithNotice" />
+			<class name="TestCases.VSFineLinkedToNotices" />
+			<class name="TestCases.ViolationSpecificFinesLinkedToViolations" />
+			<class name="TestCases.VSFineLinkedFADoc" />
+		</classes>
+	</test>
+</suite>

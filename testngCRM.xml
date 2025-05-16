@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="CRMSuite">
+	<listeners>
+		<listener class-name="Listeners.ListenersTestng" />
+	</listeners>
+	<test thread-count="3" parallel="classes" name="Test">
+		<classes>
+			<class name="TestCases.CSLP_Cascading" />
+			<class name="TestCases.DashboardCRM" />
+			<class name="TestCases.CreateAndLinkCase" />
+			<class name="TestCases.CSPInternal" />
+			<class name="TestCases.SubmissionSettings" />
+			<class name="TestCases.SubmissionAssignment" />
+			<class name="TestCases.CSPExternal" />
+			<class name="TestCases.EscalatedNoticesCLP" />
+			<class name="TestCases.CSDP" />
+			<class name="TestCases.CSLP" />
+		</classes>
+	</test>
+	<test thread-count="4" parallel="classes" name="Test1">
+	<classes>
+			<class name="TestCases.CreateCRMUser" />
+			<class name="TestCases.Categories" />
+			<class name="TestCases.ReportsCRM" />
+			<class name="TestCases.CascadingCustomFieldCategory" />
+		</classes>
+	</test>
+</suite>
+

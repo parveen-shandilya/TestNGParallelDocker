@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Comcate">
+	<listeners>
+		<listener class-name="Listeners.Listener" />
+	</listeners>
+	<test thread-count="4" parallel="classes" name="Test">
+		<classes>
+			<class name="TestCases.AgencyCreation" />
+			<class name="TestCases.TemplateManagement" />
+			<class name="TestCases.NotificationManagement" />
+			<class name="TestCases.SLA" />
+		</classes>
+	</test>
+</suite>

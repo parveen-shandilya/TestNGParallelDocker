@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="CESuite" parallel="classes" thread-count="4"
+	preserve-order="true">
+	<listeners>
+		<listener class-name="Listeners.ListenersTestng" />
+	</listeners>
+	<test name="Test2">
+		<classes>
+			<!--<class name="TestCases.EscalatedNotices" />
+			<class name="TestCases.CloseCase" />
+			<class name="TestCases.CDP" />
+			<class name="TestCases.ForcedAbatement" />
+			<class name="TestCases.CCP" />
+			<class name="TestCases.PerformInspection" />
+			<class name="TestCases.ReopenCases" />
+			
+			<class name="TestCases.Notices" />
+			<class name="TestCases.DashBoard" />
+			<class name="TestCases.CommLinkTest" />
+			<class name="TestCases.CDPGisDirect20" />
+			<class name="TestCases.CCPDirect20" />-->
+			
+			<class name="TestCases.FinanceAll" />
+			<class name="TestCases.FinanceLateFees" />
+			
+			
+		</classes>
+	</test>
+	
+</suite>
